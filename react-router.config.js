@@ -1,4 +1,4 @@
 export default {
   ssr: false,
-  basename: "/NeuroStrategia",
+  basename: "/NeuroStrategia/",
 };
