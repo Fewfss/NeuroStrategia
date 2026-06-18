@@ -1,25 +1,13 @@
-import type { Route } from "./+types/home";
-import Navbar from "./Navbar";
-import Sobre from "./Sobre";
-import MissaoVisaoValores from "./MissaoVisaoValores";
-import Pilares from "./Pilares";
-import Beneficios from "./Beneficios";
-import Contato from "./Contato";
-import WaveDivider from "./Wavedivider";
+import Navbar from "../components/Navbar.jsx";
+import Sobre from "../components/sections/Sobre.jsx";
+import MissaoVisaoValores from "../components/sections/MissaoVisaoValores.jsx";
+import Pilares from "../components/sections/Pilares.jsx";
+import Beneficios from "../components/sections/Beneficios.jsx";
+import Contato from "../components/sections/Contato.jsx";
+import WaveDivider from "../components/WaveDivider.jsx";
 import "../styles/Hero.css";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "NeuroStrategia | TCC" },
-    {
-      name: "description",
-      content:
-        "Landing page do projeto NeuroStrategia, com foco em neurodiversidade e inclusão organizacional.",
-    },
-  ];
-}
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navbar />

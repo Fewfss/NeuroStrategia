@@ -11,3 +11,21 @@ build/
 .nuxt/
 .cache/
 .parcel-cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Coverage / build metadata
+coverage/
+*.tsbuildinfo
