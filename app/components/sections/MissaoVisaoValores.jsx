@@ -2,17 +2,14 @@ import '../../styles/MissaoVisaoValores.css';
 
 const itens = [
   {
-    icon: '🎯',
     title: 'Missão',
     text: 'Promover ambientes de trabalho mais inclusivos, humanos e estratégicos para pessoas neurodivergentes.',
   },
   {
-    icon: '🔭',
     title: 'Visão',
     text: 'Construir uma sociedade e organizações que reconheçam o valor da diversidade cognitiva como diferencial de inovação e pertencimento.',
   },
   {
-    icon: '💡',
     title: 'Valores',
     text: 'Empatia, respeito, transparência, acessibilidade, aprendizagem contínua e valorização das diferenças.',
   },
@@ -33,7 +30,6 @@ export default function MissaoVisaoValores() {
         <div className="mvv-grid">
           {itens.map((item) => (
             <article className="mvv-card" key={item.title}>
-              <span className="mvv-icon">{item.icon}</span>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </article>

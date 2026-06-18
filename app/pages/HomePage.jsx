@@ -20,9 +20,9 @@ export default function HomePage() {
         </div>
 
         <div className="hero-content">
-          <span className="hero-badge">TCC · Neurodiversidade</span>
+       
           <h1 className="hero-title">
-            Neuro<span className="hero-gradient">Estratégia</span>
+            Neuro<span className="hero-gradient">Strategia</span>
           </h1>
           <p className="hero-subtitle">
             Estratégias práticas para construir ambientes mais inclusivos,

@@ -44,7 +44,7 @@ export default function Navbar() {
               <span className="logo-infinity">∞</span>
             </div>
             <span className="logo-text">
-              Neuro<strong>Stratégia</strong>
+              Neuro<strong>Strategia</strong>
             </span>
           </a>
 

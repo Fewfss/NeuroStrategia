@@ -41,7 +41,7 @@ export default function Sobre() {
             <div className="circle-group">
               <div className="big-circle">
                 <div className="inner-text">
-                  <span className="inner-emoji">🤝</span>
+                  <span className="inner-emoji"></span>
                   <p>Inclusão<br />estratégica</p>
                 </div>
               </div>
