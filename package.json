@@ -7,8 +7,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client"
-  },
+    "deploy": "npx gh-pages -d build/client"  },
   "dependencies": {
     "@react-router/node": "8.0.0",
     "@react-router/serve": "8.0.0",
