@@ -1,0 +1,11 @@
+.wave-divider {
+  line-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+.wave-down { margin-bottom: -1px; }
+.wave-up   { margin-top:    -1px; }

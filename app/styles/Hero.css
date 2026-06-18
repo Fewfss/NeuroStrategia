@@ -1,0 +1,178 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5DDDCA 0%, #9B7FD4 60%, #B5A4E8 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 120px 80px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* blobs */
+.hero-blobs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.28;
+}
+.blob-1 { width: 500px; height: 500px; background: #7C3AED; top: -100px; right: -80px; }
+.blob-2 { width: 300px; height: 300px; background: #06B6D4; bottom: 0;     left: 0; }
+.blob-3 { width: 200px; height: 200px; background: #F59E0B; bottom: 100px; right: 200px; }
+
+/* content */
+.hero-content { position: relative; z-index: 2; }
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-gradient {
+  background: linear-gradient(90deg, #ffffff, var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-ghost {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(8px);
+  transition: background 0.25s;
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.24); }
+
+/* visual */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---- brain wheel ---- */
+.brain-wheel {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+.wheel-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+
+.wheel-symbol {
+  font-size: 2.4rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--teal), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wheel-segment {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 255, 255, 0.36);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--white);
+  transition: transform 0.3s, background 0.3s;
+}
+.wheel-segment:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.1) !important; /* sobrepõe o posicionamento base */
+}
+
+.seg-emoji { font-size: 1.5rem; line-height: 1; }
+.wheel-segment small {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+/* posições dos 6 segmentos em volta do centro (raio ~135px) */
+.seg-top          { top: 0;    left: 50%;  transform: translateX(-50%); }
+.seg-top-right    { top: 18%;  right: 0;   }
+.seg-bottom-right { bottom: 18%; right: 0; }
+.seg-bottom       { bottom: 0; left: 50%;  transform: translateX(-50%); }
+.seg-bottom-left  { bottom: 18%; left: 0;  }
+.seg-top-left     { top: 18%;  left: 0;    }
+
+/* ---- responsive ---- */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; padding: 100px 32px 60px; text-align: center; }
+  .hero-subtitle { margin: 0 auto 32px; }
+  .hero-ctas     { justify-content: center; }
+  .hero-visual   { display: none; }
+}

@@ -1,0 +1,137 @@
+/* =============================================
+   TOKENS — edite aqui para mudar cores/fontes
+   ============================================= */
+:root {
+  --teal:         #3ECFB2;
+  --teal-dark:    #27A98E;
+  --purple:       #9B5FCF;
+  --purple-light: #C084FC;
+  --gold:         #F5C842;
+  --green:        #43C153;
+  --pink:         #E879A0;
+
+  --bg-dark:  #1A1040;
+  --bg-light: #F7F5FF;
+  --white:    #FFFFFF;
+
+  --text:       #1E1340;
+  --text-muted: #6B7280;
+  --text-light: rgba(255, 255, 255, 0.85);
+
+  --radius:    20px;
+  --radius-lg: 32px;
+
+  --shadow:    0 8px 32px rgba(90, 50, 180, 0.12);
+  --shadow-lg: 0 20px 60px rgba(90, 50, 180, 0.20);
+
+  --font-display: 'Nunito', sans-serif;
+  --font-body:    'Poppins', sans-serif;
+}
+
+/* =============================================
+   RESET
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar { display: none; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+img { vertical-align: middle; max-width: 100%; }
+a   { text-decoration: none; }
+ul  { list-style: none; }
+button { cursor: pointer; }
+
+/* =============================================
+   UTILIDADES GLOBAIS
+   ============================================= */
+.gradient-text {
+  background: linear-gradient(90deg, var(--teal), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 10px;
+}
+.section-label.light { color: var(--teal); }
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.section-title.light { color: var(--white); }
+.section-title.center { text-align: center; }
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+.section-sub.light { color: var(--text-light); }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--white);
+  color: var(--purple);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+}
+
+::selection {
+  background: var(--purple);
+  color: var(--white);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
