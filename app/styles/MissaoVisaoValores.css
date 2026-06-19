@@ -47,3 +47,37 @@
     grid-template-columns: 1fr;
   }
 }
+
+.mvv-grid-top {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+}
+
+.mvv-valores-titulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.mvv-grid-valores {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mvv-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #18204f;
+}
+
+@media (max-width: 900px) {
+  .mvv-grid-top { grid-template-columns: 1fr; }
+  .mvv-grid-valores { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .mvv-grid-valores { grid-template-columns: 1fr; }
+}

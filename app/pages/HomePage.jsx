@@ -38,37 +38,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-hidden="true">
-          <div className="brain-wheel">
-            <div className="wheel-center">
-              <span className="wheel-symbol">∞</span>
-            </div>
-            <div className="wheel-segment seg-top">
-              <span className="seg-emoji">🧠</span>
-              <small>Neurodiversidade</small>
-            </div>
-            <div className="wheel-segment seg-top-right">
-              <span className="seg-emoji">🤝</span>
-              <small>Inclusão</small>
-            </div>
-            <div className="wheel-segment seg-bottom-right">
-              <span className="seg-emoji">📈</span>
-              <small>Performance</small>
-            </div>
-            <div className="wheel-segment seg-bottom">
-              <span className="seg-emoji">🌱</span>
-              <small>Crescimento</small>
-            </div>
-            <div className="wheel-segment seg-bottom-left">
-              <span className="seg-emoji">💬</span>
-              <small>Comunicação</small>
-            </div>
-            <div className="wheel-segment seg-top-left">
-              <span className="seg-emoji">⚙️</span>
-              <small>Estratégia</small>
-            </div>
-          </div>
-        </div>
+      
       </section>
 
       <WaveDivider direction="down" fill="var(--white)" />

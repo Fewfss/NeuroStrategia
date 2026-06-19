@@ -85,3 +85,11 @@
 @media (max-width: 640px) {
   .pilar-body-inner { padding-left: 28px; }
 }
+
+.pilar-header,
+.pilar-texto h3,
+.pilar-texto span,
+.pilar-body-inner p,
+.tag {
+  font-family: var(--font-body);
+}

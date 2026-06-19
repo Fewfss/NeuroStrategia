@@ -11,7 +11,7 @@
   color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 16px;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 .sobre-text strong { color: var(--text); }
 

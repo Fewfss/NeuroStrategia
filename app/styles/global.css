@@ -1,6 +1,48 @@
 /* =============================================
    TOKENS — edite aqui para mudar cores/fontes
    ============================================= */
+   @font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Bold Italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/NeuroStrategia/fonts/The Seasons Light Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
 :root {
   --teal:         #3ECFB2;
   --teal-dark:    #27A98E;
@@ -24,8 +66,8 @@
   --shadow:    0 8px 32px rgba(90, 50, 180, 0.12);
   --shadow-lg: 0 20px 60px rgba(90, 50, 180, 0.20);
 
-  --font-display: 'Nunito', sans-serif;
-  --font-body:    'Poppins', sans-serif;
+--font-display: 'The Seasons', serif;
+--font-body: 'The Seasons', serif;
 }
 
 /* =============================================
@@ -46,7 +88,7 @@ html::-webkit-scrollbar { display: none; }
 
 body {
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 20px;
   color: var(--text);
   background: var(--white);
   overflow-x: hidden;
@@ -135,3 +177,4 @@ button { cursor: pointer; }
     transition-duration: 0.01ms !important;
   }
 }
+
